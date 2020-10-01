@@ -3,7 +3,7 @@ function memo() {
   submit.addEventListener("click", (e) => {
     const formData = new FormData(document.getElementById("form"));
     const XHR = new XMLHttpRequest();
-    XHR.open("POST", "/post", true);
+    XHR.open("POST", "/posts", true);
     XHR.responseType = "json";
     XHR.send(formData);
     XHR.onload = () => {
